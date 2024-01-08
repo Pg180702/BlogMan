@@ -1,0 +1,154 @@
+"https://blog.feedspot.com/wp-content/uploads/2017/06/moviereview.jpg?x30630"
+
+ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mi nisl,
+            malesuada non venenatis id, pharetra ac lectus. Fusce quis facilisis
+            urna, ut vestibulum augue. Duis eu nulla arcu. Nulla facilisis,
+            augue in dictum ultrices, nibh turpis mattis mi, vitae gravida nisi
+            massa at lacus. Vestibulum finibus, nisi ut fermentum dapibus, lorem
+            dolor tempor est, in gravida tortor erat vitae felis. Curabitur in
+            erat felis. Vivamus egestas venenatis nibh sed condimentum.
+            Vestibulum et tincidunt ex. Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. In a turpis nec lorem tincidunt finibus. Orci
+            varius natoque penatibus et magnis dis parturient montes, nascetur
+            ridiculus mus. Sed consectetur mattis ultrices. In luctus convallis
+            lectus sit amet lacinia. Nullam dignissim sed lectus non vulputate.
+            Pellentesque lobortis nec libero quis faucibus. Duis eget ultrices
+            magna. Ut non auctor erat, sed sodales nibh. Duis porta gravida
+            libero et molestie. Praesent magna risus, molestie at nunc quis,
+            efficitur vestibulum est. Praesent et elit non velit consectetur
+            commodo. Donec imperdiet dolor nec finibus aliquet. Praesent
+            sollicitudin facilisis mi in lobortis. Integer maximus, metus id
+            suscipit blandit, tortor mauris laoreet magna, a pretium augue mi a
+            eros. Quisque et metus fringilla, imperdiet erat sed, hendrerit
+            dolor. Cras at sem quis ante ultrices dignissim. Donec et pulvinar
+            mi. Suspendisse venenatis nec lacus id scelerisque. Nullam non
+            libero euismod, feugiat mi id, facilisis velit. Etiam posuere neque
+            vitae magna semper luctus. Sed id vehicula ex, vitae congue nisl.
+            Vestibulum aliquet luctus nulla. Duis lobortis ac erat non finibus.
+            Vivamus eu iaculis nisi, tincidunt varius mi. Nunc condimentum arcu
+            velit, vel consequat est blandit at. Suspendisse vulputate
+            consectetur ligula sodales interdum. Vestibulum eget leo erat.
+            Pellentesque eu erat sem. Vivamus sit amet suscipit turpis. Integer
+            in nunc consectetur, ornare odio et, sagittis velit. Donec molestie
+            ipsum nec velit commodo posuere. Phasellus pellentesque tincidunt
+            odio, faucibus commodo neque porta nec. Aliquam erat volutpat.
+            Curabitur bibendum metus lectus, eu dapibus neque iaculis vel. Duis
+            leo velit, luctus quis condimentum eu, aliquet ut erat. Morbi a nunc
+            tortor. Integer iaculis placerat elit vel commodo. Nullam sit amet
+            magna gravida lacus dapibus maximus sit amet ac libero. Phasellus
+            non eros nec erat consequat semper in vel purus. Phasellus
+            condimentum, velit eleifend molestie lobortis, libero mauris
+            scelerisque lacus, vitae pretium nisl arcu pretium dui. Morbi nec
+            elit sit amet ipsum dignissim elementum. Morbi a aliquam libero.
+            Aenean tristique ac est sed luctus. Duis ultrices eros et felis
+            aliquam, sed semper metus ultricies. Phasellus quis consectetur
+            massa, at euismod dui. Vestibulum ullamcorper sem quis est viverra,
+            at condimentum nisl hendrerit. Donec euismod in magna a aliquam.
+            Maecenas ornare augue maximus justo egestas auctor. Nulla dapibus,
+            mi at accumsan blandit, diam dolor hendrerit metus, sed elementum
+            enim lectus quis orci. Integer urna arcu, pretium non interdum quis,
+            porta ut est. Pellentesque feugiat egestas fermentum. Vestibulum sed
+            felis fringilla, accumsan metus id, pharetra ligula. Aenean ornare,
+            arcu a ultrices condimentum, ante mauris venenatis diam, nec mollis
+            elit ipsum dictum nunc. Nunc lacus velit, placerat vitae massa vel,
+            congue tristique neque. Donec commodo ac neque ut venenatis. Sed
+            interdum dolor est. Phasellus facilisis, lacus at placerat feugiat,
+            ex eros pellentesque felis, ac porta risus urna pulvinar dolor. Cras
+            at lectus vitae orci tincidunt auctor vitae sit amet orci. Nullam id
+            ornare erat. Praesent sodales, ex sodales tempor luctus, massa
+            libero facilisis ex, ac ultricies tellus quam at ante. Sed et
+            tristique nibh, vitae sagittis augue. Nunc eleifend pharetra ex in
+            cursus. Cras id libero nec arcu eleifend congue. Duis pharetra ante
+            sed tortor pellentesque, in vehicula lorem placerat. Phasellus non
+            velit ultrices, egestas neque id, euismod lacus. In quis ligula
+            arcu. Integer et purus pretium, blandit massa vel, posuere sem.
+            Pellentesque habitant morbi tristique senectus et netus et malesuada
+            fames ac turpis egestas. Sed in interdum tellus, sed tincidunt
+            neque. Suspendisse felis tortor, volutpat vel pellentesque eu,
+            tincidunt in dui. Quisque nisi eros, hendrerit ut lectus sed,
+            porttitor finibus tortor. Integer ut euismod tellus, id congue
+            lectus. In malesuada orci rhoncus, ultrices tortor at, gravida
+            tortor. Maecenas vitae augue interdum, consectetur est vitae,
+            sodales tellus. Phasellus efficitur id odio at hendrerit. Nam a
+            facilisis lacus. Nulla luctus hendrerit felis, id iaculis mi mollis
+            sed. Donec velit tortor, posuere commodo sem quis, fermentum
+            tristique tellus. Proin interdum ut nibh nec malesuada. Fusce in
+            vehicula risus. Quisque in facilisis augue, ac pellentesque quam.
+            Sed a quam mi. Generated 10 paragraphs, 723 words, 4863 bytes of
+            Lorem Ipsum
+            ------------------------------------------------------------------==--
+<div className="post-page">
+      <h1>{postInfo.title}</h1>
+      <time>{formatISO9075(new Date(postInfo.createdAt))}</time>
+      <div className="author">by @{postInfo.author.username}</div>
+      {userInfo.id === postInfo.author._id && (
+        <div className="edit-row">
+          <Link className="edit-btn" to={`/edit/${postInfo._id}`}>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
+            </svg>
+            Edit this post
+          </Link>
+        </div>
+      )}
+      <div className="image">
+        <img src={`http://localhost:4000/${postInfo.cover}`} alt=""/>
+      </div>
+      <div className="content" dangerouslySetInnerHTML={{__html:postInfo.content}} />
+    </div>
+    -------------------------------------------------------
+    div.post-page div.image{
+    max-height:300px;
+    display: flex;
+    overflow:hidden;
+}
+div.post-page div.image img{
+    object-fit: cover;
+    object-position: center center;
+    width: 100%;
+}
+div.post-page a{
+    color:#333;
+    text-decoration: underline;
+}
+div.post-page h1{
+    text-align: center;
+    margin: 10px 0 5px;
+}
+div.post-page time{
+    text-align: center;
+    display: block;
+    font-size:1rem;
+    color:#aaa;
+    margin: 10px 0;
+}
+div.post-page div.author{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: .7rem;
+    font-weight: bold;
+}
+div.content p{
+    line-height: 1.7rem;
+    margin: 30px 0;
+}
+div.content li{
+    margin-bottom: 10px;
+}
+div.edit-row{
+    text-align: center;
+    margin-bottom: 20px;
+}
+div.post-page a.edit-btn{
+    background-color: #333;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    color: #fff;
+    padding:15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+a svg{
+    height:20px;
+}
