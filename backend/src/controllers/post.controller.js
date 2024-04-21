@@ -26,7 +26,7 @@ const createPost = (req, res) => {
 };
 const allPosts = async (req, res) => {
   const posts = await Post.find()
-    .populate("author", ["username"])
+    .populate("author", ["name"])
     .sort({ createdAt: -1 })
     .limit(20);
   res.json(posts);
@@ -34,13 +34,13 @@ const allPosts = async (req, res) => {
 };
 const mainPost = async (req, res) => {
   const { id } = req.params;
-  const post = await Post.findById(id).populate("author", ["username"]);
+  const post = await Post.findById(id).populate("author", ["name"]);
   console.log(post);
   res.json(post);
 };
 const editPost = async (req, res) => {
   const { id } = req.params;
-  const post = await Post.findById(id).populate("author", ["username"]);
+  const post = await Post.findById(id).populate("author", ["name"]);
   console.log(post);
   res.json(post);
 };

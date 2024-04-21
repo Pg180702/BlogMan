@@ -32,7 +32,7 @@ const MainPost = () => {
         }}
         fontFamily="Montserrat"
       >
-        {postInfo.author.username}
+        {postInfo.author.name}
       </Box>
       <Box sx={{ textAlign: "center", marginBottom: "20px" }}>
         <Link to={`/editpost/${id}`}>

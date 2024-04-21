@@ -61,7 +61,7 @@ const HomePosts = ({
                 color="text.secondary"
                 fontFamily="Montserrat"
               >
-                {author.username} {createdAt}
+                {author.name} {createdAt}
               </Typography>
             </Grid>
             <Grid item>
