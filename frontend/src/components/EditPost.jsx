@@ -9,13 +9,15 @@ const EditPost = () => {
   const [redirect, setRedirect] = useState(false);
   const { id } = useParams();
   useEffect(() => {
-    fetch(`http://localhost:4000/editpost/${id}`).then((response) => {
-      response.json().then((data) => {
-        //setData(data);
-        setTitle(data.title);
-        setContent(data.content);
-      });
-    });
+    fetch(`https://blogman-api.onrender.com/editpost/${id}`).then(
+      (response) => {
+        response.json().then((data) => {
+          //setData(data);
+          setTitle(data.title);
+          setContent(data.content);
+        });
+      }
+    );
   }, []);
   const handleImageChange = (e) => {
     setSelectedFile(e.target.files[0]);
