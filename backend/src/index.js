@@ -18,7 +18,7 @@ mongoose
   })
   .catch((err) => console.log(err));
 app.get("/", () => {
-  console.log("server running");
+  res.send("server running");
 });
 app.use("/users", userRoutes);
 app.use("/posts", postRoutes);
