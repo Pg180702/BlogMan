@@ -17,9 +17,7 @@ mongoose
     console.log("Mongo Connected");
   })
   .catch((err) => console.log(err));
-app.get("/", () => {
-  res.send("server running");
-});
+
 app.use("/users", userRoutes);
 app.use("/posts", postRoutes);
 
