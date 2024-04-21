@@ -16,11 +16,14 @@ const NewPost = () => {
     formData.append("content", content);
     formData.append("image", selectedFile);
     e.preventDefault();
-    const response = await fetch("http://localhost:4000/posts/create", {
-      method: "POST",
-      body: formData,
-      credentials: "include",
-    });
+    const response = await fetch(
+      "https://blogman-api.onrender.com/posts/create",
+      {
+        method: "POST",
+        body: formData,
+        credentials: "include",
+      }
+    );
     if (response.ok) {
       alert("post created successfully");
       setRedirect(true);

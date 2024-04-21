@@ -8,11 +8,14 @@ const Register = () => {
   const [email, setEmail] = useState("");
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch("http://localhost:4000/users/register", {
-      method: "POST",
-      body: JSON.stringify({ name, username, email, password }),
-      headers: { "Content-Type": "application/json" },
-    });
+    const response = await fetch(
+      "https://blogman-api.onrender.com/users/register",
+      {
+        method: "POST",
+        body: JSON.stringify({ name, username, email, password }),
+        headers: { "Content-Type": "application/json" },
+      }
+    );
     if (response.status === 200) alert("Registration success");
     else alert("registration failed");
   };

@@ -28,11 +28,14 @@ const EditPost = () => {
     //formData.append("image", selectedFile);
     formData.append("id", id);
     if (selectedFile != null) formData.append("image", selectedFile);
-    const response = await fetch("http://localhost:4000/posts/updatePost", {
-      method: "PUT",
-      body: formData,
-      credentials: "include",
-    });
+    const response = await fetch(
+      "https://blogman-api.onrender.com/posts/updatePost",
+      {
+        method: "PUT",
+        body: formData,
+        credentials: "include",
+      }
+    );
     if (response.ok) {
       alert("post updated successfully");
       setRedirect(true);

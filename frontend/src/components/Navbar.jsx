@@ -7,7 +7,7 @@ const Navbar = () => {
   const { setUserInfo, userInfo } = useContext(UserContext);
   const logout = async () => {
     try {
-      await fetch("http://localhost:4000/users/logout", {
+      await fetch("https://blogman-api.onrender.com/users/logout", {
         credentials: "include",
         method: "POST",
       });
