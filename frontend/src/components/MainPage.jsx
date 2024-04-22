@@ -24,7 +24,7 @@ const MainPage = () => {
       {loading ? (
         <div
           style={{
-            display: "fleex",
+            display: "flex",
             justifyContent: "center",
             alignItems: "center",
           }}
