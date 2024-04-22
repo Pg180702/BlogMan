@@ -22,7 +22,7 @@ const Navbar = () => {
     <Box>
       <AppBar position="static" sx={{ backgroundColor: "#343a40" }}>
         <Toolbar>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+          <Button sx={{ flexGrow: 1 }}>
             <Link
               to="/"
               style={{
@@ -33,7 +33,7 @@ const Navbar = () => {
             >
               BlogMan
             </Link>
-          </Typography>
+          </Button>
           {username && (
             <>
               <Link to="/newpost">
