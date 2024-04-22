@@ -5,6 +5,7 @@ import { Link, useParams } from "react-router-dom";
 const MainPost = () => {
   const [postInfo, setPostInfo] = useState(null);
   const { userInfo } = useContext(UserContext);
+
   const { id } = useParams();
   useEffect(() => {
     fetch(`https://blogman-api.onrender.com/posts/mainpost/${id}`).then(

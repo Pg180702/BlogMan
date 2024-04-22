@@ -9,7 +9,7 @@ const EditPost = () => {
   const [redirect, setRedirect] = useState(false);
   const { id } = useParams();
   useEffect(() => {
-    fetch(`https://blogman-api.onrender.com/editpost/${id}`).then(
+    fetch(`https://blogman-api.onrender.com/posts/editpost/${id}`).then(
       (response) => {
         response.json().then((data) => {
           //setData(data);
@@ -62,7 +62,8 @@ const EditPost = () => {
         <Stack spacing={2} sx={{ width: "100%" }}>
           <TextField
             variant="outlined"
-            fullWidth={title}
+            fullWidth
+            value={title}
             onChange={(e) => setTitle(e.target.value)}
             sx={{ fontFamily: "Montserrat" }}
           />
