@@ -22,7 +22,17 @@ const MainPage = () => {
   return (
     <>
       {loading ? (
-        <ClipLoader size={30} color={"black"} loading={loading} />
+        <ClipLoader
+          size={30}
+          color={"black"}
+          loading={loading}
+          css={{
+            position: "fixed",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+          }}
+        />
       ) : (
         posts.length > 0 && posts.map((post) => <HomePosts {...post} />)
       )}
