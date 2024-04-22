@@ -30,9 +30,14 @@ const Navbar = () => {
           {username && (
             <>
               <Link to="/newpost">
-                <Button style={{ color: "white" }}>Create New Post</Button>
+                <Button style={{ color: "white", fontSize: { xs: "0.8rem" } }}>
+                  Create New Post
+                </Button>
               </Link>
-              <Button style={{ color: "white" }} onClick={logout}>
+              <Button
+                style={{ color: "white", fontSize: { xs: "0.8rem" } }}
+                onClick={logout}
+              >
                 Logout
               </Button>
             </>
@@ -40,13 +45,19 @@ const Navbar = () => {
           {!username && (
             <>
               <Link to="/login">
-                <Button style={{ color: "white" }}>Login</Button>
+                <Button style={{ color: "white", fontSize: { xs: "0.8rem" } }}>
+                  Login
+                </Button>
               </Link>
               <Link to="/register">
-                <Button style={{ color: "white" }}>Register</Button>
+                <Button style={{ color: "white", fontSize: { xs: "0.8rem" } }}>
+                  Register
+                </Button>
               </Link>
               <Link to="/newpost">
-                <Button style={{ color: "white" }}>Create Post</Button>
+                <Button style={{ color: "white", fontSize: { xs: "0.8rem" } }}>
+                  Create Post
+                </Button>
               </Link>
             </>
           )}
