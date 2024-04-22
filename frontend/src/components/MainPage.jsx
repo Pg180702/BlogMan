@@ -27,6 +27,7 @@ const MainPage = () => {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
+            marginTop: "50vh",
           }}
         >
           <ClipLoader size={30} color={"black"} loading={loading} />
