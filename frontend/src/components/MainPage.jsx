@@ -8,7 +8,7 @@ const MainPage = () => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 8000);
+    }, 6000);
   }, []);
   useEffect(() => {
     fetch("https://blogman-api.onrender.com/posts/allposts").then(
@@ -22,17 +22,15 @@ const MainPage = () => {
   return (
     <>
       {loading ? (
-        <ClipLoader
-          size={30}
-          color={"black"}
-          loading={loading}
-          css={{
-            position: "absolute",
-            top: "50%",
-            left: "50%",
-            transform: "translate(-50%, -50%)",
+        <div
+          style={{
+            display: "fleex",
+            justifyContent: "center",
+            alignItems: "center",
           }}
-        />
+        >
+          <ClipLoader size={30} color={"black"} loading={loading} />
+        </div>
       ) : (
         posts.length > 0 && posts.map((post) => <HomePosts {...post} />)
       )}
