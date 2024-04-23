@@ -8,6 +8,7 @@ const cookieParser = require("cookie-parser");
 const postRoutes = require("./routes/post.route");
 
 app.use(cors({ credentials: true, origin: "https://blog-man-eta.vercel.app" }));
+app.options("*", cors());
 app.use(express.json());
 app.use(cookieParser());
 
