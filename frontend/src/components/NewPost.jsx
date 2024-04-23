@@ -11,11 +11,11 @@ const NewPost = () => {
     setSelectedFile(e.target.files[0]);
   };
   const handleSubmit = async (e) => {
+    e.preventDefault();
     const formData = new FormData();
     formData.append("title", title);
     formData.append("content", content);
     formData.append("image", selectedFile);
-    e.preventDefault();
     const response = await fetch(
       "https://blogman-api.onrender.com/posts/create",
       {
