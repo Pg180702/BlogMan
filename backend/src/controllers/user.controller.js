@@ -16,7 +16,7 @@ const registerUser = async (req, res) => {
 const loginUser = async (req, res) => {
   const { email, password } = req.body;
   const userDoc = await User.findOne({ email });
-  const passOk = bcrypt.compare(password, userDoc.password);
+  const passOk = await bcrypt.compare(password, userDoc.password);
   if (passOk) {
     // logged in
     //return res.status(200).json(userDoc);
