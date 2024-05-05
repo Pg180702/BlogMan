@@ -7,7 +7,7 @@ const secret = "sdsjadjasdsjahdjdh";
 const createPost = (req, res) => {
   const token = req.cookies.jwt;
   console.log(token);
-  console.log(req.cookies);
+  // console.log(req.cookies);
   jwt.verify(token, secret, {}, async (err, info) => {
     if (err) throw err;
     const { title, content } = req.body;
@@ -48,6 +48,7 @@ const editPost = async (req, res) => {
 };
 const updatePost = async (req, res) => {
   const token = req.cookies.jwt;
+
   jwt.verify(token, secret, {}, async (err, info) => {
     if (err) {
       return res.status(400).json("you are not the author");
