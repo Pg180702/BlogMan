@@ -26,7 +26,8 @@ const loginUser = async (req, res) => {
     };
     jwt.sign({ email, id: userDoc._id }, secret, {}, (err, token) => {
       if (err) throw err;
-      return res.status(200).cookie("token", token, options).json({
+      req.cookies.jwt = token;
+      return res.status(200).json({
         id: userDoc._id,
         email,
       });

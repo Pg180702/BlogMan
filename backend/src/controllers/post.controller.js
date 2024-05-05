@@ -47,7 +47,7 @@ const editPost = async (req, res) => {
   res.json(post);
 };
 const updatePost = async (req, res) => {
-  const { token } = req.cookies;
+  const token = req.cookies.jwt;
   jwt.verify(token, secret, {}, async (err, info) => {
     if (err) {
       return res.status(400).json("you are not the author");
