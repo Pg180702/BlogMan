@@ -5,7 +5,7 @@ const jwt = require("jsonwebtoken");
 const uploadOnCloudinary = require("../utils/cloudinary");
 const secret = "sdsjadjasdsjahdjdh";
 const createPost = (req, res) => {
-  const { token } = req.cookies;
+  const token = req.cookies.jwt;
   console.log(token);
   console.log(req.cookies);
   jwt.verify(token, secret, {}, async (err, info) => {
