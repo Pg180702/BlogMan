@@ -16,6 +16,7 @@ const NewPost = () => {
     formData.append("title", title);
     formData.append("content", content);
     formData.append("image", selectedFile);
+    formData.append("token", sessionStorage.getItem("token"));
     const response = await fetch(
       "https://blogman-api.onrender.com/posts/create",
       {

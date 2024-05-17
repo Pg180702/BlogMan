@@ -29,6 +29,7 @@ const EditPost = () => {
     formData.append("content", content);
     //formData.append("image", selectedFile);
     formData.append("id", id);
+    formData.append("token", sessionStorage.getItem("token"));
     if (selectedFile != null) formData.append("image", selectedFile);
     const response = await fetch(
       "https://blogman-api.onrender.com/posts/updatePost",

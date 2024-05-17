@@ -12,6 +12,7 @@ const Navbar = () => {
         method: "POST",
       });
       setUserInfo(null);
+      sessionStorage.removeItem("token");
     } catch (error) {
       console.error("Error logging out:", error);
     }

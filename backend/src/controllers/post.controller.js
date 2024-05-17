@@ -5,9 +5,11 @@ const jwt = require("jsonwebtoken");
 const uploadOnCloudinary = require("../utils/cloudinary");
 const secret = "sdsjadjasdsjahdjdh";
 const createPost = (req, res) => {
-  const token = req.cookies.jwt;
-  console.log(token);
+  // const token = req.cookies.jwt;
+  // console.log(req.cookies.jwt);
+  // console.log(token);
   // console.log(req.cookies);
+  const { token } = req.body;
   jwt.verify(token, secret, {}, async (err, info) => {
     if (err) throw err;
     const { title, content } = req.body;
@@ -47,7 +49,7 @@ const editPost = async (req, res) => {
   res.json(post);
 };
 const updatePost = async (req, res) => {
-  const token = req.cookies.jwt;
+  const { token } = req.body;
 
   jwt.verify(token, secret, {}, async (err, info) => {
     if (err) {

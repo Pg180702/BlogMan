@@ -20,18 +20,16 @@ const loginUser = async (req, res) => {
   if (passOk) {
     // logged in
     //return res.status(200).json(userDoc);
-    const options = {
-      httpOnly: true,
-      secure: true,
-    };
+
     jwt.sign({ email, id: userDoc._id }, secret, {}, (err, token) => {
       if (err) throw err;
-      req.cookies.jwt = token;
+      //req.cookies.jwt = token;
       console.log(token);
       console.log(req.cookies.jwt);
       return res.status(200).json({
         id: userDoc._id,
         email,
+        token,
       });
     });
   } else {
