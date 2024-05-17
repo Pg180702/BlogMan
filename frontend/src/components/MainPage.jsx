@@ -21,7 +21,7 @@ const MainPage = () => {
   }, []);
   return (
     <>
-      {loading ? (
+      {posts.length < 0 ? (
         <div
           style={{
             display: "flex",
@@ -30,10 +30,10 @@ const MainPage = () => {
             marginTop: "40vh",
           }}
         >
-          <ClipLoader size={30} color={"black"} loading={loading} />
+          <ClipLoader size={30} color={"black"} loading={true} />
         </div>
       ) : (
-        posts.length > 0 && posts.map((post) => <HomePosts {...post} />)
+        posts.map((post) => <HomePosts {...post} />)
       )}
     </>
   );

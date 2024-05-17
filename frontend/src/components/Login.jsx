@@ -20,7 +20,6 @@ const Login = () => {
     if (response.ok) {
       response.json().then((userInfo) => {
         setUserInfo(userInfo);
-        console.log(userInfo.token);
         sessionStorage.setItem("token", userInfo.token);
         setRedirect(true);
       });
