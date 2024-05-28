@@ -22,7 +22,7 @@ const MainPost = () => {
       <Typography
         variant="h3"
         sx={{ textAlign: "center", margin: "10px 0 5px" }}
-        fontFamily="Montserrat"
+        fontFamily="Poppins"
       >
         {postInfo.title}
       </Typography>
@@ -33,7 +33,7 @@ const MainPost = () => {
           fontSize: "1.5rem",
           fontWeight: "bold",
         }}
-        fontFamily="Montserrat"
+        fontFamily="Poppins"
       >
         {postInfo.author.name}
       </Box>
@@ -50,7 +50,7 @@ const MainPost = () => {
               borderRadius: 5,
               textDecoration: "none",
             }}
-            fontFamily="Montserrat"
+            fontFamily="Poppins"
           >
             Edit Me
           </Button>
@@ -75,7 +75,7 @@ const MainPost = () => {
       </Box>
       <Box
         sx={{ lineHeight: "1.7rem", margin: "50px 20px" }}
-        fontFamily="Montserrat"
+        fontFamily="Poppins"
       >
         {postInfo.content}
       </Box>

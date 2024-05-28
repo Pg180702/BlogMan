@@ -1,6 +1,7 @@
 import { ButtonBase, Grid, Paper, Typography, styled } from "@mui/material";
 import { Link } from "react-router-dom";
 import React from "react";
+import "../index.css";
 const Img = styled("img")({
   margin: "auto",
   display: "block",
@@ -50,16 +51,16 @@ const HomePosts = ({
         <Grid item xs={12} sm={9} container>
           <Grid item xs container direction="column" spacing={2}>
             <Grid item xs>
-              <Typography gutterBottom variant="h6" fontFamily="Montserrat">
+              <Typography gutterBottom variant="h6" fontFamily="Poppins">
                 {title}
               </Typography>
-              <Typography variant="body2" gutterBottom fontFamily="Montserrat">
+              <Typography variant="body2" gutterBottom fontFamily="Poppins">
                 {content.substring(0, 300)}
               </Typography>
               <Typography
                 variant="body2"
                 color="text.secondary"
-                fontFamily="Montserrat"
+                fontFamily="Poppins"
               >
                 {author.name} {createdAt}
               </Typography>
@@ -69,7 +70,7 @@ const HomePosts = ({
                 <Typography
                   sx={{ cursor: "pointer" }}
                   variant="body2"
-                  fontFamily="Montserrat"
+                  fontFamily="Poppins"
                 >
                   Edit
                 </Typography>
