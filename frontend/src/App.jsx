@@ -11,6 +11,7 @@ import MainPost from "./components/MainPost";
 import { UserContextProvider } from "./components/UserContext";
 import Layout from "./components/Layout";
 import MainPage from "./components/MainPage";
+import "./index.css";
 
 function App() {
   //const [count, setCount] = useState(0)
