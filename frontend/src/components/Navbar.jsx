@@ -33,7 +33,7 @@ const Navbar = () => {
               style={{
                 color: "white",
                 textDecoration: "none",
-                fontSize: "0.8rem",
+                fontSize: "1.2rem",
               }}
             >
               BlogMan
@@ -42,12 +42,12 @@ const Navbar = () => {
           {username && (
             <>
               <Link to="/newpost">
-                <Button style={{ color: "white", fontSize: "1rem" }}>
+                <Button style={{ color: "white", fontSize: "0.9rem" }}>
                   Create New Post
                 </Button>
               </Link>
               <Button
-                style={{ color: "white", fontSize: "1rem" }}
+                style={{ color: "white", fontSize: "0.9rem" }}
                 onClick={logout}
               >
                 Logout
@@ -57,17 +57,17 @@ const Navbar = () => {
           {!username && (
             <>
               <Link to="/login">
-                <Button style={{ color: "white", fontSize: "1rem" }}>
+                <Button style={{ color: "white", fontSize: "0.9rem" }}>
                   Login
                 </Button>
               </Link>
               <Link to="/register">
-                <Button style={{ color: "white", fontSize: "1rem" }}>
+                <Button style={{ color: "white", fontSize: "0.9rem" }}>
                   Register
                 </Button>
               </Link>
               <Link to="/newpost">
-                <Button style={{ color: "white", fontSize: "1rem" }}>
+                <Button style={{ color: "white", fontSize: "0.9rem" }}>
                   Create Post
                 </Button>
               </Link>
