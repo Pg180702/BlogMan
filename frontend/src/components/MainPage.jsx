@@ -2,26 +2,25 @@ import React, { useEffect, useState } from "react";
 import HomePosts from "./HomePosts";
 import ClipLoader from "react-spinners/ClipLoader";
 const MainPage = () => {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [posts, setPosts] = useState([]);
+
   useEffect(() => {
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-    }, 6000);
-  }, []);
-  useEffect(() => {
-    fetch("https://blogman-api.onrender.com/posts/allposts").then(
-      (response) => {
+    fetch("https://blogman-api.onrender.com/posts/allposts")
+      .then((response) => {
         response.json().then((posts) => {
           setPosts(posts);
+          setLoading(false);
         });
-      }
-    );
+      })
+      .catch((error) => {
+        console.error(error);
+        setLoading(false);
+      });
   }, []);
   return (
     <>
-      {posts.length < 0 ? (
+      {loading ? (
         <div
           style={{
             display: "flex",

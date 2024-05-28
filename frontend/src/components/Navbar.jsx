@@ -26,7 +26,7 @@ const Navbar = () => {
           <Typography
             variant="h6"
             component="div"
-            sx={{ flexGrow: 1, fontSize: "0.8rem" }}
+            sx={{ flexGrow: 1, fontSize: "1rem", fontWeight: "bold" }}
           >
             <Link
               to="/"
@@ -42,12 +42,12 @@ const Navbar = () => {
           {username && (
             <>
               <Link to="/newpost">
-                <Button style={{ color: "white", fontSize: "0.8rem" }}>
+                <Button style={{ color: "white", fontSize: "1rem" }}>
                   Create New Post
                 </Button>
               </Link>
               <Button
-                style={{ color: "white", fontSize: "0.8rem" }}
+                style={{ color: "white", fontSize: "1rem" }}
                 onClick={logout}
               >
                 Logout
@@ -57,17 +57,17 @@ const Navbar = () => {
           {!username && (
             <>
               <Link to="/login">
-                <Button style={{ color: "white", fontSize: "0.8rem" }}>
+                <Button style={{ color: "white", fontSize: "1rem" }}>
                   Login
                 </Button>
               </Link>
               <Link to="/register">
-                <Button style={{ color: "white", fontSize: "0.8rem" }}>
+                <Button style={{ color: "white", fontSize: "1rem" }}>
                   Register
                 </Button>
               </Link>
               <Link to="/newpost">
-                <Button style={{ color: "white", fontSize: "0.8rem" }}>
+                <Button style={{ color: "white", fontSize: "1rem" }}>
                   Create Post
                 </Button>
               </Link>
